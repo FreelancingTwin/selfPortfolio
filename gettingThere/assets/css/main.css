@@ -1681,3 +1681,9 @@ input, select, textarea {
 .copyWriting{
 	margin-bottom:.8rem;
 }
+
+/*contd on May 27*/
+.inlineAsk{
+	display: inline-block;
+}
+
