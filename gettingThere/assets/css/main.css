@@ -8,6 +8,9 @@
 */
 *{
 	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* overflow-y: hidden; */
 }
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -25,7 +28,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -159,6 +163,11 @@ input, select, textarea {
 		color: inherit;
 	}
 
+	.underline{
+		/* border-bottom: dotted 1px  rgba(255, 255, 255, 0.5); */
+		display: inline-block;
+		/* width: 100%; */
+	}
 		
 .noDecoration, .logo{
   text-decoration: none
@@ -178,8 +187,16 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 0rem 0;
+		margin: 0 0 0rem 0rem;
 		text-align: left ;
+	}
+
+	.headingP{
+		margin: 0 0 2rem 2rem;
+	}
+	 
+	.workflowP{
+		margin: 0 0 0 2rem;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -204,7 +221,8 @@ input, select, textarea {
 			width: -ms-max-content;
 			width: max-content;
 			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			/* margin: 0 0 2rem 0; */
+			margin: 0 0 2rem 2rem;
 		}
 
 	h1 {
@@ -698,7 +716,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2rem 0;
+			/* margin: 0 0 2rem 0; */
 			width: 100%;
 		}
 
@@ -707,13 +725,48 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
-			margin: 2.5rem 0;
+			display: inline-block;
+			/* margin: 1rem 0; */
+			/* width: 76vw; */
 			width: 100%;
+			height: 35vh;
+			/* border-radius: .3rem; */
+			/* z-index: 4; */
+			/* background-image: image("images/barbheSsalon.png") !important;
+			background-size: cover; */
+			position: relative;
+			overflow: hidden;
 		}
 
 			.image.main img {
-				width: 100%;
+				object-fit: cover;
+				height: 100%;
+				/* animation: upp 7s linear infinite; */
+				/* position: absolute; */
+				/* width: 100%; */
+				/* background-repeat: repeat-y; */
+				/* height: 100%; */
+				/* margin-bottom: 2rem; */
+				/* z-index: 3; 
+			
+			}
+
+			.longImages{
+				/* object-fit: cover; */
+				
+				/* animation: upp 7s linear infinite;  */
+				position: absolute;
+				 margin:0;
+				
+				 /* top:10px; 
+				left:10px;   */
+				/* width: 300%; */
+		
+				/* background-size: cover;   */
+				/* height: 100%; */
+				padding:0;
+				background:red; 
+				 z-index: 40; 
 			}
 
 		@media screen and (max-width: 736px) {
@@ -939,7 +992,14 @@ input, select, textarea {
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
-
+/* //twitter margin left */
+.icon.brands.fa-twitter {
+	margin: 0 0 0 2rem;
+	/* background: ; */
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
 /* Table 
 
 	.table-wrapper {
@@ -1123,6 +1183,7 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
+		backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
@@ -1307,13 +1368,22 @@ input, select, textarea {
 			height: 5.5rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
-			border-radius: 100%;
+			border-radius: 50%;
 			background: #25D366;
 		}
 
 			#header .logo .icon:before {
 				font-size: 2rem;
 			}
+
+			.logo .fa-whatsapp{
+				font-size: 0rem;
+				padding: 0
+			}
+			/* .noDecoration{
+				font-size: 200%;
+				padding:0;
+			} */
 
 		#header .content {
 			border-style: solid;
@@ -1687,3 +1757,72 @@ input, select, textarea {
 	display: inline-block;
 }
 
+.inline{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.swiper {
+	width: 90%;
+	max-height: 90%;
+	overflow: hidden;
+  }
+
+  .swiper img{
+	  height: 34vh;
+	  width: 100%;
+	  opacity: 1;
+	  border-radius: .3rem;
+	  margin: 0rem 0 1rem 0;
+  }
+
+  .swiper-slide{
+	  margin-bottom: 2rem;
+	  overflow: hidden;
+  }
+
+  .commission{
+	  margin: 1.5rem 0;
+  }
+
+  .swiper-slide img{
+	  object-fit: cover;
+	  object-position: top left;
+	  animation: upp 12s ease-in-out infinite ;
+	  /* animation-delay: 2s; */
+	  /* align-self: flex-start; */
+	  /* scroll-behavior: auto; */
+	  /* transform: translateY(50%) */
+	  /* transform-origin: top; */
+  }
+/* made a discovery here, turns out, if you wanna swing the scrolling images back and forth/ up and down, just add keyframes 0% and 50%. The images scroll up and down flawlessly. No need to define upto 100% */
+  @keyframes upp{
+	0%{
+		/* transform: translate3d(0, 0, 0); */
+		object-position: top left;
+
+	}
+	50%{
+		/* transform: translateY(-200%);
+		top: -200%; */
+		object-position: bottom left;
+	}
+}
+/* 
+  .swiper-pagination{
+	  /* margin-top: 1rem; */
+   
+  /* .swiper {
+	width: 600px;
+	height: 300px;
+  }
+   */
+
+   /* marquee{
+	/* behavior: scroll;
+	direction: up;
+	loop: -1;
+	truespeed:10;
+	 *
+
+   } */

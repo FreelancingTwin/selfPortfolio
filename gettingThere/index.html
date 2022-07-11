@@ -6,11 +6,17 @@
 -->
 <html>
 	<head>
-		<title>Tau Website Maker	</title>
+		<title>Tau Website Maker</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- CSS  -->
+		<!-- Swiper  -->
+		<link
+		rel="stylesheet"
+		href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -26,7 +32,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>You <i class="fas fa-arrow-right arrow"></i> Ahmed <i class="fas fa-arrow-right   arrow"></i> Your website</h1>
-								<p><a class="underline" href="#contact"><h2 class='inlineAsk'>Ask</h2></a> to get your perfect website tailor-made by a passionate expert.</p>
+								<p><a class="underline" href="#contact"><h3 class='inlineAsk'>Ask</h3></a> to get your perfect website tailor-made by a passionate expert.</p>
 							</div>
 						</div>
 						<nav>
@@ -46,27 +52,95 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="/images/headerFinal.webp" alt="" /></span>
-								<p>Hi! I’m Ahmed here😄. A software engineer who can do full stack Web-development. Aka I make websites.</p>
-<p> By the way, check out my <a href="#work" class="underline">awesome work</a>.</p>
+								<span class="image main"><img src="images/pic01.webp" alt="" /></span>
+								<p class="headingP">Hi! I’m Tauqeer Ahmed here. A software engineer who can do full stack Web-development. 
+									<br> I can make you a fine website for you and your business.</p>
+<p class="headingP"> By the way, check out my <a href="#work" class="underline">awesome work.</a></p>
 							
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-<!-- 								<h3>Miss. Fernandes' Portfolio</h3>
-						<p>The site took two weeks to craft. Totally responsive, the client, Miss.Alisha received it saying <em>(and I quote)</em> "it's so Alishaaish😆." Both of us were much satisfied how this turned out.</p>
-       --><h3>This section is under construction, to be updated shortly. Thanks for checking. In the meanwhile, <a href="#contact">chat with Ahmed, he's nice.</a></h3>
+						<!-- div swiper -->
+						<!-- swiper-wrapper --> 
+						<!-- swiper-slide -->
+						<!-- a link surrounding h3, and p  -->
+						<!-- 								
+							<div class="swiper">
+								<!-- Additional required wrapper -->
+									<article id="work">
+										<h2 class="major">Work</h2>
+										
+<div class="swiper">
+<div class="swiper-wrapper">
+    <!-- Slides -->
+	<!-- <a href="https://barb-her-salon.netlify.app"><h2>Barb'her Salon 🔗</h2></a>
+		<section class="image main">
+			
+			<!-- <img src="images/Barb'her salon.png" alt="" /> -->
+			<!-- <div class="longImages">
+				
+			</div> --
+			<img src="images/barbheSsalon.png">
+			
+		</section>-->
+			
+	
+	<div class="swiper-slide">
+		<a href="https://egglectic-cafe.netlify.app/">	<h1 class="underline">Egglectic Cafe</h1>
+		</a><h1 class="inline">🔗</h1>
+	
+		<img src="images/Egg'lectic Cafe.png" alt="">
+
+		<p>Classic restraunt site that helps people discover the specialties and menu.</p>
+		<p>The site is capable of hosting 10,000 visitors everyday.</p>
+		<p>It symbolizes the cafe's history which helps it stand out!</p>
+		<h3 class="commission"><a href="#contact">Comission a similiar site</a></h3>
+	
+	</div>
+		<div class="swiper-slide">
+	
+<a href="https://barb-her-salon.netlify.app/"  ><h1 class="underline">Barb'her Salon</h1>
+	</a><h1 class="inline">🔗</h1>
+
+		<img src="images/barbheSsalon.png" alt="">
+					
+			<p>Classic website for local hair salons, brings in about a dozen clients a week.</p>
+			<p>The site lists the staff, their best qualities, and all their services.</p>
+	
+		<p>Educates the customeres of industry best practises too!</p> 
+	
+		<h3 class="commission"><a href="#contact">Comission a similiar site</a></h3>
+	</div>
+	<div class="swiper-slide">
+			<a href="https://kattssochic.com/">	<h1 class="underline">Katt'sSoChic.com</h1>
+			</a><h1 class="inline">🔗</h1>
+		<img src="images/Katt's So Chic.jpg" alt="">
+	<p>A multi-thousand dollar fashion brand that needed me to tweak their layout.</p>
+	<p>The site is optimized to be blazing fast and excels in speed index scores.</p>
+	<p>Do visit them, they've a lovely catalogue.</p>
+	<h3 class="commission"><a href="#contact">Comission a similiar site</a></h3>
+</div>
+    
+  </div>
+  <!-- If we need pagination aka those dots below pictures -->
+  <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons, just uncomment the two lines below->
+	<!-- <div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div> -->
+
+	 <!-- If we need scrollbar , also tweak js for it to activate-->
+	 <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+       <!-- <h3>This section is under construction, to be updated shortly. Thanks for checking. In the meanwhile, <a href="#contact">chat with Ahmed, he's nice.</a></h3> -->
  </article>
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">Workflow</h2>
-								<p>Alright, I'm gonna convince you to work together. By the end, you'll be convinced. Bet! </p>
+								<p class="workflowP">Alright, I'm gonna convince you to work together. By the end, you'll be convinced. Bet! </p>
 							
 							<div class="swiper">
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main"><img src="https://images.pexels.com/photos/4672717/pexels-photo-4672717.jpeg?cs=srgb&dl=pexels-anna-shvets-4672717.jpg&fm=jpg" alt="" /></span>
 								<h2>Why?</h2><h3>Here's why you need a website asap.</h3>
 								
 								<ul>
@@ -373,6 +447,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>

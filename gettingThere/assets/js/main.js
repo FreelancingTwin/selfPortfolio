@@ -399,3 +399,34 @@
 					});
 
 })(jQuery);
+
+
+// Swiper js
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+	// effect: 'cards',
+	grabCursor: true,
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: true,
+	},
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+  
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	// scrollbar: {
+	// 	el: '.swiper-scrollbar',
+	//   },
+})
