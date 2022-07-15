@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600" );
 
 /*
 	Dimension by HTML5 UP
@@ -192,11 +192,11 @@ input, select, textarea {
 	}
 
 	.headingP{
-		margin: 0 0 2rem 2rem;
+		margin: 1rem 0;
 	}
 	 
 	.workflowP{
-		margin: 0 0 0 2rem;
+		margin: 0 0 1rem 2rem;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -743,7 +743,7 @@ input, select, textarea {
 				height: 100%;
 				/* animation: upp 7s linear infinite; */
 				/* position: absolute; */
-				/* width: 100%; */
+				width: 101%;
 				/* background-repeat: repeat-y; */
 				/* height: 100%; */
 				/* margin-bottom: 2rem; */
@@ -765,8 +765,8 @@ input, select, textarea {
 				/* background-size: cover;   */
 				/* height: 100%; */
 				padding:0;
-				background:red; 
-				 z-index: 40; 
+				background:transparent; 
+				 /* z-index: 40;  */
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1370,6 +1370,10 @@ input, select, textarea {
 			border: solid 1px #ffffff;
 			border-radius: 50%;
 			background: #25D366;
+			filter: saturate(.6);
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 			#header .logo .icon:before {
@@ -1377,7 +1381,8 @@ input, select, textarea {
 			}
 
 			.logo .fa-whatsapp{
-				font-size: 0rem;
+				/* font-size: 1rem; */
+				/* font-size: 150%; */
 				padding: 0
 			}
 			/* .noDecoration{
@@ -1788,8 +1793,8 @@ input, select, textarea {
   .swiper-slide img{
 	  object-fit: cover;
 	  object-position: top left;
-	  animation: upp 12s ease-in-out infinite ;
-	  /* animation-delay: 2s; */
+	  animation: upp 13s ease-in-out infinite ;
+	  animation-delay: 1s;
 	  /* align-self: flex-start; */
 	  /* scroll-behavior: auto; */
 	  /* transform: translateY(50%) */
