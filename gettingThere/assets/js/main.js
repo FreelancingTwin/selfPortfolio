@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
 (function($) {
 
 	var	$window = $(window),
@@ -403,19 +405,23 @@
 
 // Swiper js
 
+
+
+
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
-	direction: 'horizontal',
+	direction: 'fade',
 	loop: true,
 	// effect: 'cards',
 	grabCursor: true,
 	spaceBetween: 30,
 	centeredSlides: true,
+
 	autoplay: {
-	  delay: 5000,
+	  delay: 3500,
 	  disableOnInteraction: true,
 	},
-	// If we need pagination
+	// If we need pagination aka those blue dots below pages
 	pagination: {
 		el: '.swiper-pagination',
 	},
@@ -425,6 +431,9 @@ const swiper = new Swiper('.swiper', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+// 	observer: true, 
+// observeParents: true
+
 
 	// scrollbar: {
 	// 	el: '.swiper-scrollbar',

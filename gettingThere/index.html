@@ -11,12 +11,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- CSS  -->
 		<!-- Swiper  -->
-		<link
+		 <!-- <link
 		rel="stylesheet"
 		href="https://unpkg.com/swiper@8/swiper-bundle.min.css" 
-		/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="assets/css/main.css" />
+		/>  -->
+		<!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>  -->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+		<link rel="stylesheet" href="assets/css/main.css"/>
 	</head>
 	<body class="is-preload">
 
@@ -52,10 +56,12 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.webp" alt="" /></span>
+								<span class="image main"><img src="images/pic01.webp" alt="" loading='lazy'/></span>
 								<p class="headingP">Hi! I’m Tauqeer Ahmed here. A software engineer who can do full stack Web-development. 
 									<br> I can make you a fine website for you and your business.</p>
+									<p>Recruiter? Please concern yourself with my <a href="assets/resume/Tauqeer Ahmed Resume.pdf">Resume Here</a> to see if I can bring full value to your team.</p>
 <p class="headingP"> By the way, check out my <a href="#work" class="underline">awesome work.</a></p>
+
 							
 							</article>
 
@@ -73,23 +79,11 @@
 <div class="swiper">
 <div class="swiper-wrapper">
     <!-- Slides -->
-	<!-- <a href="https://barb-her-salon.netlify.app"><h2>Barb'her Salon 🔗</h2></a>
-		<section class="image main">
-			
-			<!-- <img src="images/Barb'her salon.png" alt="" /> -->
-			<!-- <div class="longImages">
-				
-			</div> --
-			<img src="images/barbheSsalon.png">
-			
-		</section>-->
-			
-	
 	<div class="swiper-slide">
 		<a href="https://egglectic-cafe.netlify.app/">	<h1 class="underline">Egglectic Cafe</h1>
 		</a><h1 class="inline">🔗</h1>
 	
-		<img src="images/Egg'lectic Cafe.png" alt="">
+		<img src="images/Egg'lectic Cafe.png" alt="" loading='lazy'>
 
 		<p>Classic restraunt site that helps people discover the specialties and menu.</p>
 		<p>The site is capable of hosting 10,000 visitors everyday.</p>
@@ -102,7 +96,7 @@
 <a href="https://barb-her-salon.netlify.app/"  ><h1 class="underline">Barb'her Salon</h1>
 	</a><h1 class="inline">🔗</h1>
 
-		<img src="images/barbheSsalon.png" alt="">
+		<img src="images/barbheSsalon.png" alt="" loading='lazy'>
 					
 			<p>Classic website for local hair salons, brings in about a dozen clients a week.</p>
 			<p>The site lists the staff, their best qualities, and all their services.</p>
@@ -114,7 +108,7 @@
 	<div class="swiper-slide">
 			<a href="https://kattssochic.com/">	<h1 class="underline">Katt'sSoChic.com</h1>
 			</a><h1 class="inline">🔗</h1>
-		<img src="images/Katt's So Chic.jpg" alt="">
+		<img src="images/Katt's So Chic.jpg" alt="" loading='lazy'>
 	<p>A multi-thousand dollar fashion brand that needed me to tweak their layout.</p>
 	<p>The site is optimized to be blazing fast and excels in speed index scores.</p>
 	<p>Do visit them, they've a lovely catalogue.</p>
@@ -140,7 +134,7 @@
 								<p class="workflowP">Alright, I'm gonna convince you to work together. By the end, you'll be convinced. Bet! </p>
 							
 							<div class="swiper">
-								<span class="image main"><img src="https://images.pexels.com/photos/4672717/pexels-photo-4672717.jpeg?cs=srgb&dl=pexels-anna-shvets-4672717.jpg&fm=jpg" alt="" /></span>
+								<span class="image main"><img src="https://images.pexels.com/photos/4672717/pexels-photo-4672717.jpeg?cs=srgb&dl=pexels-anna-shvets-4672717.jpg&fm=jpg" alt="" loading='lazy'/></span>
 								<h2>Why?</h2><h3>Here's why you need a website asap.</h3>
 								
 								<ul>
@@ -158,26 +152,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-							<!--	<form method="post" action="#">
-									<div class="fields">
-										<div class="fild half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>!-->
+							
 								<ul class="icons">
 									<li><a href="https://twitter.com/KatKawPose?t=_Z19RktKaIqektv4Q6tY3g&s=09" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									
@@ -221,29 +196,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								<section>
 									<h3 class="major">Lists</h3>
 
-									<!--<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>-->
+									
 									<h4>Icons</h4>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -263,170 +216,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</ul>
 								</section>
 
-							<!--	<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-							<!--	<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>-->
-
-							<!--	<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>-->
+							
 
 							</article>
 
@@ -440,15 +230,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- BG -->
-			<div id="bg"></div>
+			<div id="bg" loading='lazy'></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js" ></script> </script>
-			<script src="assets/js/browser.min.js"  ></script>
+			<!-- Scripts -->
+			<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+			<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+			<script src="assets/js/jquery.min.js"></script> </script>
+			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js" ></script>
-			<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
-			<script src="assets/js/main.js" ></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
