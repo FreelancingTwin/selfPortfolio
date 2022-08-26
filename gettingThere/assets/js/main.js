@@ -408,34 +408,52 @@
 
 
 
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'fade',
-	loop: true,
-	// effect: 'cards',
-	grabCursor: true,
-	spaceBetween: 30,
-	centeredSlides: true,
+// const swiper = new Swiper('.swiper', {
+// 	// Optional parameters
+// 	direction: 'horizontal',
+// 	loop: true,
+// 	// effect: 'cards',
+// 	// grabCursor: true,
+// 	spaceBetween: 30,
+// 	// centeredSlides: true,
 
+// 	autoplay: {
+// 	  delay: 1000,
+// 	  disableOnInteraction: true,
+// 	},
+// 	// If we need pagination aka those blue dots below pages
+// 	pagination: {
+// 		el: '.swiper-pagination',
+// 	},
+  
+// 	// Navigation arrows
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	},
+// // 	observer: true, 
+// // observeParents: true
+
+
+// 	// scrollbar: {
+// 	// 	el: '.swiper-scrollbar',
+// 	//   },
+// })
+
+var swiper = new Swiper('.swiper', {
+	spaceBetween: 30,
 	autoplay: {
-	  delay: 3500,
+	  delay: 1600,
 	  disableOnInteraction: true,
 	},
-	// If we need pagination aka those blue dots below pages
+	centeredSlides: true,
+	loop:true,
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
 	},
-  
-	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-// 	observer: true, 
-// observeParents: true
-
-
-	// scrollbar: {
-	// 	el: '.swiper-scrollbar',
-	//   },
-})
+  });

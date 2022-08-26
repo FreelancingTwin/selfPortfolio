@@ -192,11 +192,11 @@ input, select, textarea {
 	}
 
 	.headingP{
-		margin: 1rem 0;
+		margin: 0;
 	}
 	 
 	.workflowP{
-		margin: 0 0 1rem 2rem;
+		margin: 0 .5rem 1rem 0rem !important;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -222,7 +222,7 @@ input, select, textarea {
 			width: max-content;
 			padding-bottom: 0.5rem;
 			/* margin: 0 0 2rem 0; */
-			margin: 0 0 2rem 2rem;
+			margin: 0 0 2rem 1rem;
 		}
 
 	h1 {
@@ -326,7 +326,11 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+
 	}
+			.workflowP{
+				margin: 0 .5rem 1rem 2rem !important;
+			}
 
 /* Form */
 
@@ -774,11 +778,16 @@ input, select, textarea {
 			.image.main {
 				margin: 2rem 0;
 			}
-
+		
 		}
 
 		@media screen and (max-width: 480px) {
-
+			/* .headingP{
+				transform: translateX(-3rem);
+			} */
+			.workflowP{
+				margin: 0 .5rem 1rem 1.1rem !important;
+			}
 			.image.main {
 				margin: 1.5rem 0;
 			}
@@ -1714,6 +1723,10 @@ input, select, textarea {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
 
+			.workflowP{
+				/* margin: 0 0 0 0; */
+			}
+
 		}
 
 /* Footer */
@@ -1799,6 +1812,10 @@ input, select, textarea {
 	  /* scroll-behavior: auto; */
 	  /* transform: translateY(50%) */
 	  /* transform-origin: top; */
+  }
+
+  .swiper-button-next{
+	  transform: translateY(14rem)
   }
 /* made a discovery here, turns out, if you wanna swing the scrolling images back and forth/ up and down, just add keyframes 0% and 50%. The images scroll up and down flawlessly. No need to define upto 100% */
   @keyframes upp{
